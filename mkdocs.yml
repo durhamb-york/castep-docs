@@ -36,6 +36,10 @@ nav:
         - 'Overview': 'documentation/XC/XCoverview.md'
         - 'Controlling XC': 'documentation/XC/XC.md'
         - 'libXC': 'documentation/XC/libXC.md'
+      - 'Solvation & OBCs':
+        - 'Overview': 'documentation/Solvation_OBC/overview.md'
+        - 'Multigrid Solver': 'documentation/Solvation_OBC/dlmg.md'
+        - 'Forces and Stresses': 'documentation/Solvation_OBC/force_stress.md'
       - 'Spectral':
         - 'Overview': 'documentation/Spectral/overview.md'
         - 'Keywords': 'documentation/Spectral/keywords.md'

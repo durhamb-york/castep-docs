@@ -1,0 +1,8 @@
+# Overview
+
+##Open Boundary Conditions
+
+##Solvation
+CASTEP implements the Minimal Parameter Solvent Model (MPSM), first presented by Dziedzic *et al* (https://doi.org/10.1209/0295-5075/95/43001). A more detailed description, including guidelines on the choice of parameters, is given in a further paper (https://doi.org/10.1002/qua.24075). MPSM offers a very accurate treatment of the polar (electrostatic) solvation contribution, and a rather simple, yet still accurate, treatment of the apolar terms: cavitation, dispersion and repulsion. MPSM is based on the Fattebert and Gygi model (later extended by Scherlis (https://aip.scitation.org/doi/10.1063/1.2168456). This allows investigation of molecules and atoms in solvent.
+
+Implicit solvation calculations in CASTEP can be currently only be performed in Open Boundary Conditions (OBC). The solute can be immersed in pure solvent (necessitating the solution of the Poisson equation (PE)). This differs from the ONETEP implementation which implements the solvation terms in Periodic Boundary Conditions (P.B.C.s) for both the Poisson equation or in solvent with electrolyte (leading to the Poisson-Boltzmann Equation (PBE)). The free energy of solvation can be calculated by running a calculation in vacuum first, followed by a calculation in solvent. This can be done either automatically (''auto solvation'') or manually. Apart from energy terms due to solvation, CASTEP calculates solvation contributions to forces. It is thus possible to perform in-solvent geometry optimisation and molecular dynamics (with difficulty). Additional solvent exclusion regions can be specified to keep the solvent from predefined regions of the simulation cell.
